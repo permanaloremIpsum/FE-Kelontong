@@ -20,10 +20,10 @@
                   <h2 class="h2 text-center text-gray-900 mb-5 font-weight-bold">Welcome Back!</h2>
                   <form class="user">
                     <div class="form-group">
-                      <input type="email" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter Email Address/Username">
+                      <input type="email" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Email Address/Username">
                     </div>
                     <div class="form-group">
-                      <input type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Enter Password">
+                      <input type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password">
                     </div>
                     <div class="form-group">
                       <div class="custom-control custom-checkbox small">
@@ -37,7 +37,8 @@
                     </button>
                   </form>
                   <div class="text-center mt-4">
-                    <span class="small">Don't Have an Account ? <a href="#" class="link-primary font-weight-bold">Register</a></span>
+                    <span class="small">Don't have an account? </span>
+                    <label><a href="register.php" class="link-primary font-weight-bold small">Register</a></label>
                   </div>
                 </div>
             </div>
