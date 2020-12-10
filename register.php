@@ -13,7 +13,7 @@
     <div class="container mt-5">
         <div class="row align-items-center">
             <div class="col-lg-5">
-                <img src="assets/img/logo.png" alt="" class="bg-login">
+                <img src="assets/img/logo.png" alt="" class="bg-register">
             </div>
             <div class="col-lg-7 col-md-12 col-sm-12">
             <div class="card-register">

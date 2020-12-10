@@ -13,7 +13,9 @@
     <div class="container space-container-login">
         <div class="row align-items-center">
             <div class="col-lg-6">
-                <img src="assets/img/logo.png" alt="" class="bg-login">
+                <a href="#">
+                  <img src="assets/img/logo.png" alt="" class="bg-login">
+                </a>
             </div>
             <div class="col-lg-6 col-md-12 col-sm-12">
             <div class="card-login">
@@ -29,7 +31,7 @@
                       <div class="custom-control custom-checkbox small">
                         <input type="checkbox" class="custom-control-input" id="customCheck">
                         <label class="custom-control-label" for="customCheck">Remember Me</label>
-                        <label style="float:right;"><a href="#" class="link-primary">Forgot Password?</a></label>
+                        <label style="float:right;"><a href="forgot-password.php" class="link-primary">Forgot Password?</a></label>
                       </div>
                     </div>
                     <button class="btn btn-login btn-user btn-block">
