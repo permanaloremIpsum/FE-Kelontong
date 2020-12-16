@@ -11,11 +11,25 @@
     <link href="assets/css/owl.theme.default.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="assets/css/base/style.css" rel="stylesheet">
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="assets/js/jquery.easing.min.js"></script>
+
+    <!-- Owl Carousel -->
+    <script src="assets/js/owl.carousel.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <!-- Style Own -->
+    <script src="assets/js/style.js"></script>
 </head>
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-md navbar-light bg-white">
+    <nav class="navbar fixed-top navbar-expand-md navbar-light bg-white">
         <a class="navbar-brand" href="#">
             <img src="assets/img/logo-nav.png" width="40" height="40" alt="">
             <span class="brand-logo"> Kelontong </span>
@@ -75,79 +89,516 @@
     </nav>
 
     <!-- Carousel -->
-    <div class="container-fluid mt-4">
+    <div class="container-fluid space-carousel">
         <div class="row">
-            <div class="owl-carousel owl-theme">
-                <div class="item">
+            <div class="owl-carousel owl-theme" id="owl-carousel">
+                <div class="item item-header">
                     <img src="assets/img/slider-1.jpg" class="img-slider" alt="">
                 </div>
-                <div class="item">
+                <div class="item item-header">
                     <img src="assets/img/slider-2.jpg" class="img-slider" alt="">
                 </div>
-                <div class="item">
+                <div class="item item-header">
                     <img src="assets/img/slider-3.jpg" class="img-slider" alt="">
                 </div>
-                <div class="item">
+                <div class="item item-header">
                     <img src="assets/img/slider-4.jpg" class="img-slider" alt="">
                 </div>
-                <div class="item">
+                <div class="item item-header">
                     <img src="assets/img/slider-5.jpg" class="img-slider" alt="">
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Bootstrap core JavaScript-->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- Kategori -->
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+                <h2 class="h2 text-gray-900 mb-4 font-weight-bold">Kategori Pilihan</h2>
+                <div class="owl-carousel" id="owl-carousel-kategori">
+                    <div class="item">
+                        <div class="icon-card">
+                            <a href="#" class="link-kateogri">
+                                <img src="assets/img/buah.png" class="img-kategori" alt="">
+                                <h6>Buah</h6>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="icon-card">
+                            <a href="#" class="link-kateogri">
+                                <img src="assets/img/sayuran.png" class="img-kategori" alt="">
+                                <h6>Sayuran</h6>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="icon-card">
+                            <a href="#" class="link-kateogri">
+                                <img src="assets/img/beras.png" class="img-kategori" alt="">
+                                <h6>Beras</h6>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="icon-card">
+                            <a href="#" class="link-kateogri">
+                                <img src="assets/img/gula.png" class="img-kategori" alt="">
+                                <h6>Gula</h6>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="icon-card">
+                            <a href="#" class="link-kateogri">
+                                <img src="assets/img/minuman.png" class="img-kategori" alt="">
+                                <h6>Minuman</h6>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="icon-card">
+                            <a href="#" class="link-kateogri">
+                                <img src="assets/img/bumbu.png" class="img-kategori" alt="">
+                                <h6>Bumbu</h6>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="icon-card">
+                            <a href="#" class="link-kateogri">
+                                <img src="assets/img/mie.png" class="img-kategori" alt="">
+                                <h6>Mie Instant</h6>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="icon-card">
+                            <a href="#" class="link-kateogri">
+                                <img src="assets/img/kategori-lain.png" class="img-kategori" alt="">
+                                <h6>Kategori Lain</h6>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <!-- Core plugin JavaScript-->
-    <script src="assets/js/jquery.easing.min.js"></script>
+    <!-- Flash Sale -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="h2 text-gray-900 font-weight-bold header-product">
+                    Flash Sale
+                    <span class="text-flash">Berakhir Dalam </span>
+                    <div id="countdown" class="countdown"></div>
+                    <a href="#" class="link-flash">Lihat Semua</a>
+                </h2>
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-md-3 mt-5">
+                        <div class="card">
+                            <a href="#" class="link-product">
+                                <span class="diskon">
+                                    <div class="label-diskon bg-danger">
+                                        -25%
+                                    </div>
+                                </span>
+                                <span class="like">
+                                    <button href="#" class="btn btn-sm btn-outline-danger btn-like">
+                                        <i class="fas fa-heart"></i>
+                                    </button>
+                                </span>
+                                <div class="img-wrap">
+                                    <img class="card-img" src="assets/img/anggur.jpg" alt="Vans">
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">Buah Anggur 1 Kg</h4>
+                                    <h4 class="card-price">Rp 60.000</h4>
+                                    <h4 class="card-real-price">Rp 100.000</h4>
+                                    <div class="buy d-flex justify-content-between align-items-center">
+                                        <div class="rating-product mt-2">
+                                            <i class="far fa-star"></i>
+                                            4.5
+                                        </div>
+                                        <a href="#" class="btn btn-sm btn-buy mt-2"><i class="fas fa-shopping-cart"></i> Beli</a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 mt-5">
+                        <div class="card">
+                            <a href="#" class="link-product">
+                                <span class="diskon">
+                                    <div class="label-diskon bg-danger">
+                                        -35%
+                                    </div>
+                                </span>
+                                <span class="like">
+                                    <button href="#" class="btn btn-sm btn-outline-danger btn-like">
+                                        <i class="fas fa-heart"></i>
+                                    </button>
+                                </span>
+                                <div class="img-wrap">
+                                    <img class="card-img" src="assets/img/pisang.jpg" alt="Vans">
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">Buah Pisang 1 Kg</h4>
+                                    <h4 class="card-price">Rp 70.000</h4>
+                                    <h4 class="card-real-price">Rp 120.000</h4>
+                                    <div class="buy d-flex justify-content-between align-items-center">
+                                        <div class="rating-product mt-2">
+                                            <i class="far fa-star"></i>
+                                            4.5
+                                        </div>
+                                        <a href="#" class="btn btn-sm btn-buy mt-2"><i class="fas fa-shopping-cart"></i> Beli</a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 mt-5">
+                        <div class="card">
+                            <a href="#" class="link-product">
+                                <span class="diskon">
+                                    <div class="label-diskon bg-danger">
+                                        -15%
+                                    </div>
+                                </span>
+                                <span class="like">
+                                    <button href="#" class="btn btn-sm btn-outline-danger btn-like">
+                                        <i class="fas fa-heart"></i>
+                                    </button>
+                                </span>
+                                <div class="img-wrap">
+                                    <img class="card-img" src="assets/img/kedondong.jpg" alt="Vans">
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">Buah kedondong 1 Kg</h4>
+                                    <h4 class="card-price">Rp 50.000</h4>
+                                    <h4 class="card-real-price">Rp 100.000</h4>
+                                    <div class="buy d-flex justify-content-between align-items-center">
+                                        <div class="rating-product mt-2">
+                                            <i class="far fa-star"></i>
+                                            4.5
+                                        </div>
+                                        <a href="#" class="btn btn-sm btn-buy mt-2"><i class="fas fa-shopping-cart"></i> Beli</a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 mt-5">
+                        <div class="card">
+                            <a href="#" class="link-product">
+                                <span class="diskon">
+                                    <div class="label-diskon bg-danger">
+                                        -25%
+                                    </div>
+                                </span>
+                                <span class="like">
+                                    <button href="#" class="btn btn-sm btn-outline-danger btn-like">
+                                        <i class="fas fa-heart"></i>
+                                    </button>
+                                </span>
+                                <div class="img-wrap">
+                                    <img class="card-img" src="assets/img/apel.jpg" alt="Vans">
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">Buah Apel 1 Kg</h4>
+                                    <h4 class="card-price">Rp 80.000</h4>
+                                    <h4 class="card-real-price">Rp 100.000</h4>
+                                    <div class="buy d-flex justify-content-between align-items-center">
+                                        <div class="rating-product mt-2">
+                                            <i class="far fa-star"></i>
+                                            4.5
+                                        </div>
+                                        <a href="#" class="btn btn-sm btn-buy mt-2"><i class="fas fa-shopping-cart"></i> Beli</a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <!-- Owl Carousel -->
-    <script src="assets/js/owl.carousel.js"></script>
-    <script src="assets/js/owl.carousel.min.js"></script>
+    <!-- Produk Terlaris -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="h2 text-gray-900 font-weight-bold header-product">
+                    Produk Terlaris
+                </h2>
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-md-3 mt-5">
+                        <div class="card">
+                            <a href="#" class="link-product">
+                                <span class="diskon">
+                                    <div class="label-diskon bg-danger">
+                                        -25%
+                                    </div>
+                                </span>
+                                <span class="like">
+                                    <button href="#" class="btn btn-sm btn-outline-danger btn-like">
+                                        <i class="fas fa-heart"></i>
+                                    </button>
+                                </span>
+                                <div class="img-wrap">
+                                    <img class="card-img" src="assets/img/anggur.jpg" alt="Vans">
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">Buah Anggur 1 Kg</h4>
+                                    <h4 class="card-price">Rp 60.000</h4>
+                                    <h4 class="card-real-price">Rp 100.000</h4>
+                                    <div class="buy d-flex justify-content-between align-items-center">
+                                        <div class="rating-product mt-2">
+                                            <i class="far fa-star"></i>
+                                            4.5
+                                        </div>
+                                        <a href="#" class="btn btn-sm btn-buy mt-2"><i class="fas fa-shopping-cart"></i> Beli</a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 mt-5">
+                        <div class="card">
+                            <a href="#" class="link-product">
+                                <span class="diskon">
+                                    <div class="label-diskon bg-danger">
+                                        -35%
+                                    </div>
+                                </span>
+                                <span class="like">
+                                    <button href="#" class="btn btn-sm btn-outline-danger btn-like">
+                                        <i class="fas fa-heart"></i>
+                                    </button>
+                                </span>
+                                <div class="img-wrap">
+                                    <img class="card-img" src="assets/img/pisang.jpg" alt="Vans">
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">Buah Pisang 1 Kg</h4>
+                                    <h4 class="card-price">Rp 70.000</h4>
+                                    <h4 class="card-real-price">Rp 120.000</h4>
+                                    <div class="buy d-flex justify-content-between align-items-center">
+                                        <div class="rating-product mt-2">
+                                            <i class="far fa-star"></i>
+                                            4.5
+                                        </div>
+                                        <a href="#" class="btn btn-sm btn-buy mt-2"><i class="fas fa-shopping-cart"></i> Beli</a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 mt-5">
+                        <div class="card">
+                            <a href="#" class="link-product">
+                                <span class="diskon">
+                                    <div class="label-diskon bg-danger">
+                                        -15%
+                                    </div>
+                                </span>
+                                <span class="like">
+                                    <button href="#" class="btn btn-sm btn-outline-danger btn-like">
+                                        <i class="fas fa-heart"></i>
+                                    </button>
+                                </span>
+                                <div class="img-wrap">
+                                    <img class="card-img" src="assets/img/kedondong.jpg" alt="Vans">
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">Buah kedondong 1 Kg</h4>
+                                    <h4 class="card-price">Rp 50.000</h4>
+                                    <h4 class="card-real-price">Rp 100.000</h4>
+                                    <div class="buy d-flex justify-content-between align-items-center">
+                                        <div class="rating-product mt-2">
+                                            <i class="far fa-star"></i>
+                                            4.5
+                                        </div>
+                                        <a href="#" class="btn btn-sm btn-buy mt-2"><i class="fas fa-shopping-cart"></i> Beli</a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 mt-5">
+                        <div class="card">
+                            <a href="#" class="link-product">
+                                <span class="diskon">
+                                    <div class="label-diskon bg-danger">
+                                        -25%
+                                    </div>
+                                </span>
+                                <span class="like">
+                                    <button href="#" class="btn btn-sm btn-outline-danger btn-like">
+                                        <i class="fas fa-heart"></i>
+                                    </button>
+                                </span>
+                                <div class="img-wrap">
+                                    <img class="card-img" src="assets/img/apel.jpg" alt="Vans">
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">Buah Apel 1 Kg</h4>
+                                    <h4 class="card-price">Rp 80.000</h4>
+                                    <h4 class="card-real-price">Rp 100.000</h4>
+                                    <div class="buy d-flex justify-content-between align-items-center">
+                                        <div class="rating-product mt-2">
+                                            <i class="far fa-star"></i>
+                                            4.5
+                                        </div>
+                                        <a href="#" class="btn btn-sm btn-buy mt-2"><i class="fas fa-shopping-cart"></i> Beli</a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-md-3 mt-5">
+                        <div class="card">
+                            <a href="#" class="link-product">
+                                <span class="diskon">
+                                    <div class="label-diskon bg-danger">
+                                        -25%
+                                    </div>
+                                </span>
+                                <span class="like">
+                                    <button href="#" class="btn btn-sm btn-outline-danger btn-like">
+                                        <i class="fas fa-heart"></i>
+                                    </button>
+                                </span>
+                                <div class="img-wrap">
+                                    <img class="card-img" src="assets/img/anggur.jpg" alt="Vans">
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">Buah Anggur 1 Kg</h4>
+                                    <h4 class="card-price">Rp 60.000</h4>
+                                    <h4 class="card-real-price">Rp 100.000</h4>
+                                    <div class="buy d-flex justify-content-between align-items-center">
+                                        <div class="rating-product mt-2">
+                                            <i class="far fa-star"></i>
+                                            4.5
+                                        </div>
+                                        <a href="#" class="btn btn-sm btn-buy mt-2"><i class="fas fa-shopping-cart"></i> Beli</a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 mt-5">
+                        <div class="card">
+                            <a href="#" class="link-product">
+                                <span class="diskon">
+                                    <div class="label-diskon bg-danger">
+                                        -35%
+                                    </div>
+                                </span>
+                                <span class="like">
+                                    <button href="#" class="btn btn-sm btn-outline-danger btn-like">
+                                        <i class="fas fa-heart"></i>
+                                    </button>
+                                </span>
+                                <div class="img-wrap">
+                                    <img class="card-img" src="assets/img/pisang.jpg" alt="Vans">
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">Buah Pisang 1 Kg</h4>
+                                    <h4 class="card-price">Rp 70.000</h4>
+                                    <h4 class="card-real-price">Rp 120.000</h4>
+                                    <div class="buy d-flex justify-content-between align-items-center">
+                                        <div class="rating-product mt-2">
+                                            <i class="far fa-star"></i>
+                                            4.5
+                                        </div>
+                                        <a href="#" class="btn btn-sm btn-buy mt-2"><i class="fas fa-shopping-cart"></i> Beli</a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 mt-5">
+                        <div class="card">
+                            <a href="#" class="link-product">
+                                <span class="diskon">
+                                    <div class="label-diskon bg-danger">
+                                        -15%
+                                    </div>
+                                </span>
+                                <span class="like">
+                                    <button href="#" class="btn btn-sm btn-outline-danger btn-like">
+                                        <i class="fas fa-heart"></i>
+                                    </button>
+                                </span>
+                                <div class="img-wrap">
+                                    <img class="card-img" src="assets/img/kedondong.jpg" alt="Vans">
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">Buah kedondong 1 Kg</h4>
+                                    <h4 class="card-price">Rp 50.000</h4>
+                                    <h4 class="card-real-price">Rp 100.000</h4>
+                                    <div class="buy d-flex justify-content-between align-items-center">
+                                        <div class="rating-product mt-2">
+                                            <i class="far fa-star"></i>
+                                            4.5
+                                        </div>
+                                        <a href="#" class="btn btn-sm btn-buy mt-2"><i class="fas fa-shopping-cart"></i> Beli</a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 mt-5">
+                        <div class="card">
+                            <a href="#" class="link-product">
+                                <span class="diskon">
+                                    <div class="label-diskon bg-danger">
+                                        -25%
+                                    </div>
+                                </span>
+                                <span class="like">
+                                    <button href="#" class="btn btn-sm btn-outline-danger btn-like">
+                                        <i class="fas fa-heart"></i>
+                                    </button>
+                                </span>
+                                <div class="img-wrap">
+                                    <img class="card-img" src="assets/img/apel.jpg" alt="Vans">
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">Buah Apel 1 Kg</h4>
+                                    <h4 class="card-price">Rp 80.000</h4>
+                                    <h4 class="card-real-price">Rp 100.000</h4>
+                                    <div class="buy d-flex justify-content-between align-items-center">
+                                        <div class="rating-product mt-2">
+                                            <i class="far fa-star"></i>
+                                            4.5
+                                        </div>
+                                        <a href="#" class="btn btn-sm btn-buy mt-2"><i class="fas fa-shopping-cart"></i> Beli</a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <script type="text/javascript">
-        $('.owl-carousel').owlCarousel({
-            loop: true,
-            margin: 10,
-            autoplay: true,
-            autoplayTimeout: 4000,
-            nav: false,
-            lazyLoad: true,
-            responsive: {
-                0: {
-                    items: 1
-                },
-                600: {
-                    items: 1,
-                    stagePadding: 80
-                },
-                1000: {
-                    items: 1,
-                    stagePadding: 150
-                },
-                1200: {
-                    items: 1,
-                    stagePadding: 150
-                },
-                1400: {
-                    items: 1,
-                    stagePadding: 200
-                },
-                1600: {
-                    items: 1,
-                    stagePadding: 350
-                },
-                1800: {
-                    items: 1,
-                    stagePadding: 400
-                }
-            }
-        })
-    </script>
+    <!-- Produk Terbaru -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="h2 text-gray-900 font-weight-bold header-product">
+                    Produk Terbaru
+                </h2>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
