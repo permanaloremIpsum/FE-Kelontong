@@ -122,8 +122,44 @@ function countdownSale(){
     }, 1000);
 }
 
+function limitTitle(){
+    let elem = $(".card-title");
+    for (let i = 0; i < elem.length; i++) {
+        let title = elem[i].innerText;
+        if(title.length > 30){
+            title = title.substr(0, 30)+"...";
+            elem[i].innerHTML = title;
+        }
+    }
+}
+
+function likeProduct() {
+    $('.label-like').click(function() {
+
+
+        // ($("a").not($(this))).removeClass("btn-pnl-viz");
+        // $(this).toggleClass("fas fa-heart");
+        const icon = $("i", this);
+
+        // if (icon[0].classList[0].value == 'far') {
+        //     icon[0].classList[0].remove('far');
+        //     icon[0].classList[0].add('fas');
+        // } else {
+        //     icon[0].classList[0].remove('fas');
+        //     icon[0].classList[0].add('far');
+        // }
+        // $("i", this).toggleClass("bg-danger");
+        console.log(icon[0].classList[0]);
+    
+    }); 
+    
+//   x.classList.toggle("fas fa-heart");
+}
+
 $(document).ready(function(){
     carouselBanner();
     carouselKategori();
     countdownSale();
+    limitTitle();
+    likeProduct();
 })
