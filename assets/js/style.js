@@ -156,10 +156,28 @@ function likeProduct() {
 //   x.classList.toggle("fas fa-heart");
 }
 
+function countJumlah(){
+    $('.minus').click(function () {
+        var $input = $(this).parent().find('.input-jumlah');
+        var count = parseInt($input.val()) - 1;
+        count = count < 1 ? 1 : count;
+        $input.val(count);
+        $input.change();
+        return false;
+    });
+    $('.plus').click(function () {
+        var $input = $(this).parent().find('.input-jumlah');
+        $input.val(parseInt($input.val()) + 1);
+        $input.change();
+        return false;
+    });
+}
+
 $(document).ready(function(){
     carouselBanner();
     carouselKategori();
     countdownSale();
     limitTitle();
     likeProduct();
+    countJumlah();
 })

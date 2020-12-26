@@ -377,7 +377,7 @@
                                 <div class="card-body">
                                     <h4 class="card-title">Buah Anggur 1 Kg</h4>
                                     <h4 class="card-price">Rp 60.000</h4>
-                                    <h4 class="card-real-price">Rp 100.000</h4>
+                                    <!-- <h4 class="card-real-price">Rp 100.000</h4> -->
                                     <div class="buy d-flex justify-content-between align-items-center">
                                         <div class="rating-product mt-2">
                                             <i class="far fa-star"></i>
