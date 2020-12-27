@@ -670,6 +670,68 @@ input.input-jumlah {
   font-size: 14px !important;
 }
 
+.btn-rating {
+  margin-top: 10px;
+  font-weight: 400;
+  color: #f08006;
+  background: #fff;
+  margin-right: 10px;
+  border: 1px solid #bbb;
+}
+
+.btn-rating.active {
+  border: 1px solid #f08006;
+}
+
+span.rating-star {
+  color: #000 !important;
+}
+
+.review-item-head {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.img-rating-star {
+  width: 125px;
+  margin-bottom: 10px;
+}
+
+h5.title-rating {
+  margin-bottom: -5px;
+}
+
+small.time-rating {
+  color: #bbb !important;
+}
+
+p.text-rating {
+  margin-top: 15px;
+  font-size: 13px;
+}
+
+.testi-image {
+  display: flex;
+}
+
+.img-testi {
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+
+.review-user {
+  width: 35px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.page-link {
+  color: #f08006 !important;
+}
+
 @media (max-width: 768px) {
   .nav-space {
     display: none;

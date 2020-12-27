@@ -214,6 +214,132 @@
                 </div>
             </div>
         </div>
+        <div class="row mt-4">
+            <div class="col-md-5">
+                <h3 class="title-info">Ulasan Barang</h3>
+            </div>
+            <div class="col-md-7">
+                <div class="mb-4">
+                    <h5 class="title-info-detail">Daftar Ulasan</h5>
+                    <button class="btn btn-sm btn-rating active"><i class="fas fa-star"></i> <span class="rating-star">5</span></button>
+                    <button class="btn btn-sm btn-rating"><i class="fas fa-star"></i> <span class="rating-star">4</span></button>
+                    <button class="btn btn-sm btn-rating"><i class="fas fa-star"></i> <span class="rating-star">3</span></button>
+                    <button class="btn btn-sm btn-rating"><i class="fas fa-star"></i> <span class="rating-star">2</span></button>
+                    <button class="btn btn-sm btn-rating"><i class="fas fa-star"></i> <span class="rating-star">1</span></button>
+                    <div class="review-item mt-4">
+                        <div class="review-item-head">
+                            <div class="review-item-head-content">
+                                <img src="assets/img/rating_5.png" alt="" class="img-rating-star">
+                                <h5 class="h5 title-rating">Barang Bagus Banget!</h5>
+                                <small class="time-rating">Ditulis 27 Desember 202</small>
+                                <p class="text-rating">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima assumenda voluptas magnam animi rem a quis, similique eos at quidem dolorum reprehenderit est id iste in, blanditiis ipsam quae fugiat?</p>
+                            </div>
+                            <div class="testi-image">
+                                <img src="assets/img/anggur.jpg" alt="" class="img-testi">
+                            </div>
+                        </div>
+                        <div class="review-item-user">
+                            <img src="assets/img/user.jpg" alt="" class="review-user">
+                            <span class="ml-1">Dede</span>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="review-item mt-4">
+                        <div class="review-item-head">
+                            <div class="review-item-head-content">
+                                <img src="assets/img/rating_4.png" alt="" class="img-rating-star">
+                                <h5 class="h5 title-rating">Barang Bagus Banget!</h5>
+                                <small class="time-rating">Ditulis 27 Desember 202</small>
+                                <p class="text-rating">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima assumenda voluptas magnam animi rem a quis, similique eos at quidem dolorum reprehenderit est id iste in, blanditiis ipsam quae fugiat?</p>
+                            </div>
+                            <div class="testi-image">
+                                <img src="assets/img/anggur.jpg" alt="" class="img-testi">
+                            </div>
+                        </div>
+                        <div class="review-item-user">
+                            <img src="assets/img/user.jpg" alt="" class="review-user">
+                            <span class="ml-1">Dede</span>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="review-item mt-4">
+                        <div class="review-item-head">
+                            <div class="review-item-head-content">
+                                <img src="assets/img/rating_3.png" alt="" class="img-rating-star">
+                                <h5 class="h5 title-rating">Barang Bagus Banget!</h5>
+                                <small class="time-rating">Ditulis 27 Desember 202</small>
+                                <p class="text-rating">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima assumenda voluptas magnam animi rem a quis, similique eos at quidem dolorum reprehenderit est id iste in, blanditiis ipsam quae fugiat?</p>
+                            </div>
+                            <div class="testi-image">
+                                <img src="assets/img/anggur.jpg" alt="" class="img-testi">
+                            </div>
+                        </div>
+                        <div class="review-item-user">
+                            <img src="assets/img/user.jpg" alt="" class="review-user">
+                            <span class="ml-1">Dede</span>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="review-item mt-4">
+                        <div class="review-item-head">
+                            <div class="review-item-head-content">
+                                <img src="assets/img/rating_2.png" alt="" class="img-rating-star">
+                                <h5 class="h5 title-rating">Barang Bagus Banget!</h5>
+                                <small class="time-rating">Ditulis 27 Desember 202</small>
+                                <p class="text-rating">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima assumenda voluptas magnam animi rem a quis, similique eos at quidem dolorum reprehenderit est id iste in, blanditiis ipsam quae fugiat?</p>
+                            </div>
+                            <div class="testi-image">
+                                <img src="assets/img/anggur.jpg" alt="" class="img-testi">
+                            </div>
+                        </div>
+                        <div class="review-item-user">
+                            <img src="assets/img/user.jpg" alt="" class="review-user">
+                            <span class="ml-1">Dede</span>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="review-item mt-4">
+                        <div class="review-item-head">
+                            <div class="review-item-head-content">
+                                <img src="assets/img/rating_1.png" alt="" class="img-rating-star">
+                                <h5 class="h5 title-rating">Barang Bagus Banget!</h5>
+                                <small class="time-rating">Ditulis 27 Desember 202</small>
+                                <p class="text-rating">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima assumenda voluptas magnam animi rem a quis, similique eos at quidem dolorum reprehenderit est id iste in, blanditiis ipsam quae fugiat?</p>
+                            </div>
+                            <div class="testi-image">
+                                <img src="assets/img/anggur.jpg" alt="" class="img-testi">
+                            </div>
+                        </div>
+                        <div class="review-item-user">
+                            <img src="assets/img/user.jpg" alt="" class="review-user">
+                            <span class="ml-1">Dede</span>
+                        </div>
+                        <hr>
+                    </div>
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">4</a></li>
+                            <li class="page-item"><a class="page-link" href="#">5</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Produk Terbaru -->
@@ -221,7 +347,7 @@
         <div class="row">
             <div class="col-md-12">
                 <h2 class="h2 text-gray-900 font-weight-bold header-product h2-border">
-                    Produk Terbaru
+                    Produk Terkait
                 </h2>
                 <div class="row">
                     <div class="col-12 col-sm-6 col-md-3 mt-5">
