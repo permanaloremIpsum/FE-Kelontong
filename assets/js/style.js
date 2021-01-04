@@ -191,6 +191,7 @@ function totalPriceCart(){
     let priceTotal = $('.price-total');
     let totalBeli = $('#total-beli');
     
+
     for (let i = 0; i < harga.length; i++) {
         temp = convertToAngka(harga[i].innerText)*qty[i].value;
         total += temp;
@@ -207,12 +208,16 @@ $(document).ready(function(){
     carouselKategori();
     countdownSale();
     limitTitle();
-    likeProduct();
     countJumlah();
     countJumlahCart()
     totalPriceCart();
-
-    $('input.input-jumlah').on('input',function(e){
-        console.log($(this)[0].value)
+    
+    const floatField = $('#form-control');
+    const floatContainer = $('#form-group');
+    floatField.addEventListener('focus', () => {
+        floatContainer.classList.add('active');
+    });
+    floatField.addEventListener('blur', () => {
+        floatContainer.classList.remove('active');
     });
 })

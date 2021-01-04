@@ -11,6 +11,7 @@
     <link href="assets/css/owl.theme.default.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="assets/css/lightslider.css" rel="stylesheet">
+    <link href="assets/css/floating-labels.css" rel="stylesheet">
     <link href="assets/css/base/style.css" rel="stylesheet">
 
     <!-- Bootstrap core JavaScript-->
@@ -134,7 +135,7 @@
                             </span>
                             <div class="number-cart">
                                 <span class="minus-cart">-</span>
-                                <input type="text" value="1" class="input-jumlah" />
+                                <input type="number" value="1" class="input-jumlah" />
                                 <span class="plus-cart">+</span>
                             </div>
                         </div>
@@ -161,7 +162,7 @@
                             </span>
                             <div class="number-cart">
                                 <span class="minus-cart">-</span>
-                                <input type="text" value="1" class="input-jumlah" />
+                                <input type="number" value="1" class="input-jumlah" />
                                 <span class="plus-cart">+</span>
                             </div>
                         </div>
